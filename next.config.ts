@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   // experimental: {
   //   reactRefresh: true, // Ensures Fast Refresh is enabled
   // },
-  webpackDevMiddleware: (config) => {
+  webpackDevMiddleware: (config: any) => {
     config.watchOptions = {
       poll: 1000, // Check for file changes every second
       aggregateTimeout: 300, // Reduce delay before rebuilding
