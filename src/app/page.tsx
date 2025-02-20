@@ -76,7 +76,7 @@ export default function Home() {
                 ))}
               </div>
               <blockquote className="mt-6 border-l-4 border-blue-600 pl-4 italic">
-                "Talk is cheap. Show me the code" <br />
+                &quot;Talk is cheap. Show me the code&quot; <br />
                 <span className="font-bold">- Linus Torvalds</span>
               </blockquote>
             </div>
