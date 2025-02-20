@@ -44,7 +44,7 @@ export default function Home() {
           {/* Hero Landing Section */}
           <section
             id="hero"
-            className="container mx-auto py-20 px-6 text-center"
+            className="container mx-auto py-10 px-6 text-center scroll-mt-24"
           >
             <h1 className="text-4xl text-neutral font-bold mb-4">
               Hi, I am{" "}
@@ -53,9 +53,6 @@ export default function Home() {
             <p className="text-xl mb-6">
               BS Computer Science Graduate &amp; Aspiring Full Stack Developer
             </p>
-            {/* <button className="bg-yellow-300 text-gray-900 py-2 px-4 rounded hover:bg-yellow-400">
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">See Resume</a>
-            </button> */}
             <a
               className="btn  btn-accent btn-outline rounded-md "
               href="/resume.pdf"
@@ -88,7 +85,6 @@ export default function Home() {
               </a>
             </div>
             <div className="mt-8">
-              {/* Replace with your actual image path */}
               <Image
                 src="/images/profile.jpg"
                 alt="Profile Picture"
@@ -100,7 +96,7 @@ export default function Home() {
           </section>
 
           {/* About Me */}
-          <section id="about" className="bg-white py-20">
+          <section id="about" className="bg-white py-10 scroll-mt-14">
             <div className="container mx-auto px-6">
               <h2 className="text-3xl font-bold mb-4">About Me</h2>
               <p className="mb-6">
@@ -144,7 +140,7 @@ export default function Home() {
                 ].map((tech) => (
                   <span
                     key={tech}
-                    className="bg-gray-200 py-1 px-2 rounded text-sm"
+                    className="badge badge-md badge-outline badge-neutral rounded-lg"
                   >
                     {tech}
                   </span>
@@ -158,14 +154,22 @@ export default function Home() {
           </section>
 
           {/* Work Experience */}
-          <section id="experience" className="bg-gray-50 py-20">
-            <div className="container mx-auto px-6">
-              <h2 className="text-3xl font-bold mb-8">Work Experience</h2>
-
-              <div className="mb-12">
-                <h3 className="text-2xl font-semibold">
-                  Jachin-Boaz Corporation
-                </h3>
+          <section id="experience" className="bg-gray-50 py-10 scroll-mt-14">
+            <div className="container mx-auto px-6 flex flex-col gap-8">
+              <h2 className="text-3xl font-bold">Work Experience</h2>
+              <div className="">
+                <div className="flex flex-row items-center gap-2">
+                  <h3 className="text-2xl font-semibold">
+                    Jachin-Boaz Corporation
+                  </h3>
+                  <a
+                    href="https://www.linkedin.com/company/jachin-boaz-corporation"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin size={24} />
+                  </a>
+                </div>
                 <p className="italic">
                   I.T. Officer / System Administrator, Software Developer -
                   Hybrid (2019 - Present)
@@ -187,9 +191,19 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-
-              <div className="mb-12">
-                <h3 className="text-2xl font-semibold">INVENSITY MNL, Inc.</h3>
+              <div className="">
+                <div className="flex flex-row items-center gap-2">
+                  <h3 className="text-2xl font-semibold">
+                    INVENSITY MNL, Inc.
+                  </h3>
+                  <a
+                    href="https://www.linkedin.com/company/invensity"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin size={24} />
+                  </a>
+                </div>
                 <p className="italic">
                   Junior Software Developer - Internship (July 2023 - August
                   2023)
@@ -213,168 +227,270 @@ export default function Home() {
           </section>
 
           {/* Projects */}
-          <section id="projects" className="bg-white py-20">
+          <section id="projects" className="bg-white py-10 scroll-mt-14">
             <div className="container mx-auto px-6">
               <h2 className="text-3xl font-bold mb-8">Projects</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Project Cards */}
-                <div className="card-body shadow-xl rounded-md">
-                  <div className="card-title">
-                    LearnIT - AI-Powered Learning Companion
-                  </div>
-                  <p>
-                    An AI-driven learning tool using Text Segmentation and
-                    Contextual Condensing (TSCC) for smart document analysis and
-                    retrieval. Features PDF processing, RAG querying, and
-                    seamless deployment on DigitalOcean and Vercel.
-                  </p>
-                  <div className="card-actions justify-end italic">
-                    <div className="badge badge-sm badge-outline badge-info">
-                      JavaScript
+                <div className="card shadow-xl rounded-md">
+                  <figure>
+                    <img src="/images/projects/learnit.png" alt="LearnIT" />
+                  </figure>
+                  <div className="card-body">
+                    <div className="card-title">
+                      LearnIT - AI-Powered Learning Companion
                     </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Python
+                    <div>
+                      <a
+                        href="https://github.com/PERSEUS-1337/LearnIT"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-sm btn-primary btn-outline rounded-md"
+                      >
+                        Repo <FaGithub size={24} />
+                      </a>
                     </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Next.js
-                    </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      FastAPI
-                    </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      ChromaDB
-                    </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      LangChain
-                    </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      OpenAI
-                    </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      MongoDB
-                    </div>
-                  </div>
-                </div>
-
-                <div className="card-body shadow-xl rounded-md">
-                  <div className="card-title">
-                    Random Terrain Generator - WebGL
-                  </div>
-                  <p>
-                    A procedural terrain generator that creates unique
-                    landscapes using real-time 3D rendering, designed for
-                    interactive web-based visualization.
-                  </p>
-                  <div className="card-actions justify-end italic">
-                    <div className="badge badge-sm badge-outline badge-info">
-                      JavaScript
-                    </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      WebGL
+                    <p>
+                      An AI-driven learning tool using Text Segmentation and
+                      Contextual Condensing (TSCC) for smart document analysis
+                      and retrieval. Features PDF processing, RAG querying, and
+                      seamless deployment on DigitalOcean and Vercel.
+                    </p>
+                    <div className="card-actions justify-end italic">
+                      <div className="badge badge-sm badge-outline badge-info">
+                        JavaScript
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Python
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Next.js
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        FastAPI
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        ChromaDB
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        LangChain
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        OpenAI
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        MongoDB
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="card-body shadow-xl rounded-md">
-                  <div className="card-title">
-                    PHILMACH - Online Registration System
-                  </div>
-                  <p>
-                    An automated event registration system integrating Google
-                    Forms & Sheets API for participant management. Features QR
-                    code generation, email notifications, and on-site check-in.
-                  </p>
-                  <div className="card-actions justify-end italic">
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Google Sheets API
+                <div className="card shadow-xl rounded-md">
+                  <figure>
+                    <img
+                      src="/images/projects/webgl.png"
+                      alt="Random Terrain Generator"
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <div className="card-title">
+                      Random Terrain Generator - WebGL
                     </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Google Forms
+                    <div className="flex flex-row gap-2">
+                      <a
+                        href="https://github.com/PERSEUS-1337/WebGL-random-terrain-generator"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-sm btn-primary btn-outline rounded-md"
+                      >
+                        Repo <FaGithub size={24} />
+                      </a>
+                      <a href="/webgl-project/index.html" className="btn btn-sm btn-info btn-outline rounded-md">
+                        Demo
+                      </a>
                     </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Python
-                    </div>
-                  </div>
-                </div>
-
-                <div className="card-body shadow-xl rounded-md">
-                  <div className="card-title">
-                    Elemental Odyssey - Java Platformer Game
-                  </div>
-                  <p>
-                    A custom Java-based platformer with an in-house physics
-                    engine, map editor, and multiplayer support using socket
-                    programming over LAN.
-                  </p>
-                  <div className="card-actions justify-end italic">
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Java
-                    </div>
-                  </div>
-                </div>
-
-                <div className="card-body shadow-xl rounded-md">
-                  <div className="card-title">
-                    URSHRT - Custom T-Shirt Generator
-                  </div>
-                  <p>
-                    An online store allowing users to design and order custom
-                    t-shirts via an intuitive interface with Shopify API
-                    integration.
-                  </p>
-                  <div className="card-actions justify-end italic">
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Next.js
-                    </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      React.js
-                    </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      TailwindCSS
-                    </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Shopify API
-                    </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      JavaScript
-                    </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      TypeScript
-                    </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Vercel
+                    <p>
+                      A procedural terrain generator that creates unique
+                      landscapes using real-time 3D rendering, designed for
+                      interactive web-based visualization.
+                    </p>
+                    <div className="card-actions justify-end italic">
+                      <div className="badge badge-sm badge-outline badge-info">
+                        JavaScript
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        WebGL
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="card-body shadow-xl rounded-md">
-                  <div className="card-title">
-                    Reaction-Time Based Web Research Application
+                <div className="card shadow-xl rounded-md">
+                  <figure>
+                    <img
+                      src="/images/projects/philmach.png"
+                      alt="PHILMACH"
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <div className="card-title">
+                      PHILMACH - Online Registration System
+                    </div>
+                    <div className="flex flex-row gap-2">
+                      <a
+                        href="https://github.com/PERSEUS-1337/philmach-online-registration"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-sm btn-primary btn-outline rounded-md"
+                      >
+                        Repo <FaGithub size={24} />
+                      </a>
+                    </div>
+                    <p>
+                      An automated event registration system integrating Google
+                      Forms & Sheets API for participant management. Features QR
+                      code generation, email notifications, and on-site
+                      check-in.
+                    </p>
+                    <div className="card-actions justify-end italic">
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Google Sheets API
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Google Forms
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Python
+                      </div>
+                    </div>
                   </div>
-                  <p>
-                    Developed for an Industrial Engineering student thesis, this
-                    tool collects and analyzes reaction time data in real time.
-                    It leverages Google Sheets API for automated data storage
-                    and cost-efficient deployment via Heroku.
-                  </p>
-                  <div className="card-actions justify-end italic">
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Express.js
+                </div>
+
+                <div className="card shadow-xl rounded-md">
+                  <figure>
+                    <img
+                      src="/images/projects/elemental-odyssey.png"
+                      alt="Elemental Odyssey"
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <div className="card-title">
+                      Elemental Odyssey - Java Platformer Game
                     </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Node.js
+                    <div className="flex flex-row gap-2">
+                      <a
+                        href="https://github.com/PERSEUS-1337/Elemental-Odyssey-CMSC137"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-sm btn-primary btn-outline rounded-md"
+                      >
+                        Repo <FaGithub size={24} />
+                      </a>
                     </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Google Sheets API
+                    <p>
+                      A custom Java-based platformer with an in-house physics
+                      engine, map editor, and multiplayer support using socket
+                      programming over LAN.
+                    </p>
+                    <div className="card-actions justify-end italic">
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Java
+                      </div>
                     </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      JavaScript
+                  </div>
+                </div>
+
+                <div className="card shadow-xl rounded-md">
+                  <figure>
+                    <img src="/images/projects/urshrt.png" alt="URSHRT" />
+                  </figure>
+                  <div className="card-body">
+                    <div className="card-title">
+                      URSHRT - Custom T-Shirt Generator
                     </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Heroku
+                    <div className="flex flex-row gap-2">
+                      <a href="https://www.urshrt.com/" className="btn btn-sm btn-info btn-outline rounded-md">
+                        Demo
+                      </a>
                     </div>
-                    <div className="badge badge-sm badge-outline badge-info">
-                      Papertrail
+                    <p>
+                      An online store allowing users to design and order custom
+                      t-shirts via an intuitive interface with Shopify API
+                      integration.
+                    </p>
+                    
+                    <div className="card-actions justify-end italic">
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Next.js
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        React.js
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        TailwindCSS
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Shopify API
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        JavaScript
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        TypeScript
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Vercel
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="card shadow-xl rounded-md">
+                  <figure>
+                    <img
+                      src="/images/projects/reaction-time.png"
+                      alt="Reaction-Time Based Web Research Application"
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <div className="card-title">
+                      Reaction-Time Based Web Research Application
+                    </div>
+                    <div className="flex flex-row gap-2">
+                      <a
+                        href="https://github.com/PERSEUS-1337/reaction-time"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-sm btn-primary btn-outline rounded-md"
+                      >
+                        Repo <FaGithub size={24} />
+                      </a>
+                    </div>
+                    <p>
+                      Developed for an Industrial Engineering student thesis,
+                      this tool collects and analyzes reaction time data in real
+                      time. It leverages Google Sheets API for automated data
+                      storage and cost-efficient deployment via Heroku.
+                    </p>
+                    <div className="card-actions justify-end italic">
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Express.js
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Node.js
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Google Sheets API
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        JavaScript
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Heroku
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Papertrail
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -383,7 +499,7 @@ export default function Home() {
           </section>
 
           {/* Skills */}
-          <section id="skills" className="bg-gray-50 py-20">
+          <section id="skills" className="bg-gray-50 py-20 scroll-mt-14">
             <div className="container mx-auto px-6">
               <h2 className="text-3xl font-bold mb-8">Skills</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
