@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             <div className="mt-8">
               {/* Replace with your actual image path */}
-              <Image src="/profile.jpg" alt="Profile Picture" width={150} height={150} className="mx-auto rounded-full" />
+              <Image src="/images/profile.jpg" alt="Profile Picture" width={150} height={150} className="mx-auto rounded-full" />
             </div>
           </section>
           
