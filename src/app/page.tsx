@@ -209,7 +209,13 @@ export default function Home() {
                 {/* Project Cards */}
                 <div className="card shadow-xl rounded-md">
                   <figure>
-                    <Image src="/images/projects/learnit.png" alt="LearnIT" />
+                    <Image
+                      src="/images/projects/learnit.png"
+                      alt="LearnIT"
+                      // layout="responsive"
+                      width={1920}
+                      height={1080}
+                    />
                   </figure>
                   <div className="card-body">
                     <div className="card-title">
@@ -265,6 +271,9 @@ export default function Home() {
                     <Image
                       src="/images/projects/webgl.png"
                       alt="Random Terrain Generator"
+                      // layout="responsive"
+                      width={1920}
+                      height={1080}
                     />
                   </figure>
                   <div className="card-body">
@@ -280,7 +289,10 @@ export default function Home() {
                       >
                         Repo <FaGithub size={24} />
                       </a>
-                      <a href="/webgl-project/index.html" className="btn btn-sm btn-info btn-outline rounded-md">
+                      <a
+                        href="/webgl-project/index.html"
+                        className="btn btn-sm btn-info btn-outline rounded-md"
+                      >
                         Demo
                       </a>
                     </div>
@@ -305,6 +317,9 @@ export default function Home() {
                     <Image
                       src="/images/projects/philmach.png"
                       alt="PHILMACH"
+                      // layout="responsive"
+                      width={1920}
+                      height={1080}
                     />
                   </figure>
                   <div className="card-body">
@@ -346,6 +361,9 @@ export default function Home() {
                     <Image
                       src="/images/projects/elemental-odyssey.png"
                       alt="Elemental Odyssey"
+                      // layout="responsive"
+                      width={1920}
+                      height={1080}
                     />
                   </figure>
                   <div className="card-body">
@@ -377,14 +395,23 @@ export default function Home() {
 
                 <div className="card shadow-xl rounded-md">
                   <figure>
-                    <Image src="/images/projects/urshrt.png" alt="URSHRT" />
+                    <Image
+                      src="/images/projects/urshrt.png"
+                      alt="URSHRT"
+                      // layout="responsive"
+                      width={1920}
+                      height={1080}
+                    />
                   </figure>
                   <div className="card-body">
                     <div className="card-title">
                       URSHRT - Custom T-Shirt Generator
                     </div>
                     <div className="flex flex-row gap-2">
-                      <a href="https://www.urshrt.com/" className="btn btn-sm btn-info btn-outline rounded-md">
+                      <a
+                        href="https://www.urshrt.com/"
+                        className="btn btn-sm btn-info btn-outline rounded-md"
+                      >
                         Demo
                       </a>
                     </div>
@@ -393,7 +420,7 @@ export default function Home() {
                       t-shirts via an intuitive interface with Shopify API
                       integration.
                     </p>
-                    
+
                     <div className="card-actions justify-end italic">
                       <div className="badge badge-sm badge-outline badge-info">
                         Next.js
@@ -425,6 +452,9 @@ export default function Home() {
                     <Image
                       src="/images/projects/reaction-time.png"
                       alt="Reaction-Time Based Web Research Application"
+                      // layout="responsive"
+                      width={1920}
+                      height={1080}
                     />
                   </figure>
                   <div className="card-body">
