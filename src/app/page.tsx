@@ -1,4 +1,3 @@
-// pages/index.js
 import Head from "next/head";
 import Image from "next/image";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
@@ -16,30 +15,6 @@ export default function Home() {
       </Head>
 
       <div className="bg-gray-50 text-gray-900">
-        {/* Navbar */}
-        <nav className="fixed w-full z-10 bg-gray-50">
-          <div className="container mx-auto flex justify-between items-center py-4 px-6">
-            <div className="text-xl font-bold">Aron Resty Ramillano</div>
-            <div className="space-x-4">
-              <a href="#hero" className="hover:text-blue-600">
-                Home
-              </a>
-              <a href="#about" className="hover:text-blue-600">
-                About
-              </a>
-              <a href="#experience" className="hover:text-blue-600">
-                Experience
-              </a>
-              <a href="#projects" className="hover:text-blue-600">
-                Projects
-              </a>
-              <a href="#skills" className="hover:text-blue-600">
-                Skills
-              </a>
-            </div>
-          </div>
-        </nav>
-
         <main className="pt-20">
           {/* Hero Landing Section */}
           <section
@@ -234,7 +209,7 @@ export default function Home() {
                 {/* Project Cards */}
                 <div className="card shadow-xl rounded-md">
                   <figure>
-                    <img src="/images/projects/learnit.png" alt="LearnIT" />
+                    <Image src="/images/projects/learnit.png" alt="LearnIT" />
                   </figure>
                   <div className="card-body">
                     <div className="card-title">
@@ -287,7 +262,7 @@ export default function Home() {
 
                 <div className="card shadow-xl rounded-md">
                   <figure>
-                    <img
+                    <Image
                       src="/images/projects/webgl.png"
                       alt="Random Terrain Generator"
                     />
@@ -327,7 +302,7 @@ export default function Home() {
 
                 <div className="card shadow-xl rounded-md">
                   <figure>
-                    <img
+                    <Image
                       src="/images/projects/philmach.png"
                       alt="PHILMACH"
                     />
@@ -368,7 +343,7 @@ export default function Home() {
 
                 <div className="card shadow-xl rounded-md">
                   <figure>
-                    <img
+                    <Image
                       src="/images/projects/elemental-odyssey.png"
                       alt="Elemental Odyssey"
                     />
@@ -402,7 +377,7 @@ export default function Home() {
 
                 <div className="card shadow-xl rounded-md">
                   <figure>
-                    <img src="/images/projects/urshrt.png" alt="URSHRT" />
+                    <Image src="/images/projects/urshrt.png" alt="URSHRT" />
                   </figure>
                   <div className="card-body">
                     <div className="card-title">
@@ -447,7 +422,7 @@ export default function Home() {
 
                 <div className="card shadow-xl rounded-md">
                   <figure>
-                    <img
+                    <Image
                       src="/images/projects/reaction-time.png"
                       alt="Reaction-Time Based Web Research Application"
                     />
@@ -527,16 +502,6 @@ export default function Home() {
               </div>
             </div>
           </section>
-
-          {/* Footer */}
-          <footer className="bg-white py-6">
-            <div className="container mx-auto text-center">
-              <p>
-                &copy; {new Date().getFullYear()} Aron Resty Ramillano. All
-                rights reserved.
-              </p>
-            </div>
-          </footer>
         </main>
       </div>
     </>
