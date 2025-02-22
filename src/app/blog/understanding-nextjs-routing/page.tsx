@@ -9,18 +9,18 @@ export const metadata = {
 
 export default function NextJSRoutingGuide() {
   return (
-    <div className="container mx-auto py-40 px-60">
+    <div className="container mx-auto py-40 px-6 sm:px-10 md:px-20 lg:px-60">
       <h1 className="text-4xl font-bold">{metadata.title}</h1>
       <p className="mt-4 text-gray-700">Published on {metadata.date}</p>
 
       <div className="mt-6 text-lg leading-relaxed text-gray-800">
         <p className="text-xl mb-6">{metadata.summary}</p>
         <p className="text-xl mb-6">
-          In this comprehensive guide, we&apos;ll delve deep into Next.js routing,
-          exploring its various features, comparing it with traditional routing
-          methods, and highlighting its advantages. Whether you&apos;re a beginner or
-          an experienced developer, this article will equip you with the
-          knowledge to master Next.js routing and build exceptional web
+          In this comprehensive guide, we&apos;ll delve deep into Next.js
+          routing, exploring its various features, comparing it with traditional
+          routing methods, and highlighting its advantages. Whether you&apos;re
+          a beginner or an experienced developer, this article will equip you
+          with the knowledge to master Next.js routing and build exceptional web
           experiences.
         </p>
 
@@ -357,8 +357,8 @@ function HomePage() {
         <p className="mt-4">
           <strong>Example:</strong>
         </p>
-        <pre className="bg-primary text-white px-8 py-2 rounded-md">
-          <code>
+        <pre className="bg-primary text-white px-4 py-2 rounded-md overflow-x-auto max-w-full">
+          <code className="whitespace-pre-wrap break-words">
             {`import { useRouter } from 'next/navigation'; // or 'next/router' in pages directory
 
 function BlogPost({ params }) {

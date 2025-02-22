@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Navbar from "./components/Navbar"; // Adjust the path based on your file structure
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,33 +31,7 @@ export default function RootLayout({
       >
         <div className="bg-gray-50 text-gray-900">
           {/* Navbar */}
-          <nav className="fixed w-full z-10 bg-gray-50">
-            <div className="container mx-auto flex justify-between items-center py-4 px-6">
-              <Link className="text-xl font-bold" href="/">
-                Aron Resty Ramillano
-              </Link>
-              <div className="space-x-4">
-                <Link href="/" className="hover:text-blue-600">
-                  Home
-                </Link>
-                <a href="#about" className="hover:text-blue-600">
-                  About
-                </a>
-                <a href="#experience" className="hover:text-blue-600">
-                  Experience
-                </a>
-                <a href="#projects" className="hover:text-blue-600">
-                  Projects
-                </a>
-                <a href="#skills" className="hover:text-blue-600">
-                  Skills
-                </a>
-                <Link href="/blog" className="hover:text-blue-600">
-                  Blog
-                </Link>
-              </div>
-            </div>
-          </nav>
+          <Navbar />
 
           {/* Main Content */}
           <main className="bg-gray-50 text-gray-900">{children}</main>
