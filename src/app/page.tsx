@@ -101,6 +101,8 @@ export default function Home() {
                   "FastAPI",
                   "SvelteKit",
                   "TailwindCSS",
+                  "Flutter",
+                  "Dart",
                   "LangChain",
                   "OpenAI",
                   "ChromaDB",
@@ -111,7 +113,7 @@ export default function Home() {
                   "DigitalOcean",
                   "Linux",
                   "Java",
-                  "Nginx",
+                  "Nginx"
                 ].map((tech) => (
                   <span
                     key={tech}
@@ -518,7 +520,7 @@ export default function Home() {
                 <div>
                   <h3 className="font-semibold mb-2">Technologies</h3>
                   <p>
-                    MERN, NextJS, Tailwind, Google API, SvelteKit, WordPress,
+                    MERN, NextJS, Tailwind, Google API, Dart, SvelteKit, WordPress,
                     cPanel, Flutter, ChromaDB, LangChain, OpenAI, StreamLit
                   </p>
                 </div>
