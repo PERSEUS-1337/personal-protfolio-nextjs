@@ -113,7 +113,7 @@ export default function Home() {
                   "DigitalOcean",
                   "Linux",
                   "Java",
-                  "Nginx"
+                  "Nginx",
                 ].map((tech) => (
                   <span
                     key={tech}
@@ -212,6 +212,51 @@ export default function Home() {
                 <div className="card shadow-xl rounded-md">
                   <figure>
                     <Image
+                      src="/images/projects/bashbook-todo.png"
+                      alt="BashBook Todo List App"
+                      width={1920}
+                      height={1080}
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <div className="card-title">BashBook Todo - Shared Task Management Mobile App</div>
+                    <div className="flex flex-row gap-2">
+                      <a
+                        href="https://github.com/PERSEUS-1337/bashbook-todo-list-app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-sm btn-primary btn-outline rounded-md"
+                      >
+                        Repo <FaGithub size={24} />
+                      </a>
+                    </div>
+                    <p>
+                      A Flutter & Firebase-powered shared task management
+                      application with a sleek, terminal-inspired UI. It
+                      features secure user authentication, detailed user
+                      profiles, efficient friend management, and collaborative
+                      todo lists that update in real time.
+                    </p>
+                    <div className="card-actions justify-end italic">
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Flutter
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Firebase
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Dart
+                      </div>
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Mobile
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="card shadow-xl rounded-md">
+                  <figure>
+                    <Image
                       src="/images/projects/learnit.png"
                       alt="LearnIT"
                       // layout="responsive"
@@ -263,6 +308,43 @@ export default function Home() {
                       </div>
                       <div className="badge badge-sm badge-outline badge-info">
                         MongoDB
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="card shadow-xl rounded-md">
+                  <figure>
+                    <Image
+                      src="/images/projects/elemental-odyssey.png"
+                      alt="Elemental Odyssey"
+                      // layout="responsive"
+                      width={1920}
+                      height={1080}
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <div className="card-title">
+                      Elemental Odyssey - Java Platformer Game
+                    </div>
+                    <div className="flex flex-row gap-2">
+                      <a
+                        href="https://github.com/PERSEUS-1337/Elemental-Odyssey-CMSC137"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-sm btn-primary btn-outline rounded-md"
+                      >
+                        Repo <FaGithub size={24} />
+                      </a>
+                    </div>
+                    <p>
+                      A custom Java-based platformer with an in-house physics
+                      engine, map editor, and multiplayer support using socket
+                      programming over LAN.
+                    </p>
+                    <div className="card-actions justify-end italic">
+                      <div className="badge badge-sm badge-outline badge-info">
+                        Java
                       </div>
                     </div>
                   </div>
@@ -361,43 +443,6 @@ export default function Home() {
                 <div className="card shadow-xl rounded-md">
                   <figure>
                     <Image
-                      src="/images/projects/elemental-odyssey.png"
-                      alt="Elemental Odyssey"
-                      // layout="responsive"
-                      width={1920}
-                      height={1080}
-                    />
-                  </figure>
-                  <div className="card-body">
-                    <div className="card-title">
-                      Elemental Odyssey - Java Platformer Game
-                    </div>
-                    <div className="flex flex-row gap-2">
-                      <a
-                        href="https://github.com/PERSEUS-1337/Elemental-Odyssey-CMSC137"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-sm btn-primary btn-outline rounded-md"
-                      >
-                        Repo <FaGithub size={24} />
-                      </a>
-                    </div>
-                    <p>
-                      A custom Java-based platformer with an in-house physics
-                      engine, map editor, and multiplayer support using socket
-                      programming over LAN.
-                    </p>
-                    <div className="card-actions justify-end italic">
-                      <div className="badge badge-sm badge-outline badge-info">
-                        Java
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="card shadow-xl rounded-md">
-                  <figure>
-                    <Image
                       src="/images/projects/urshrt.png"
                       alt="URSHRT"
                       // layout="responsive"
@@ -449,7 +494,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="card shadow-xl rounded-md">
+                {/* <div className="card shadow-xl rounded-md">
                   <figure>
                     <Image
                       src="/images/projects/reaction-time.png"
@@ -500,7 +545,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>
@@ -520,8 +565,9 @@ export default function Home() {
                 <div>
                   <h3 className="font-semibold mb-2">Technologies</h3>
                   <p>
-                    MERN, NextJS, Tailwind, Google API, Dart, SvelteKit, WordPress,
-                    cPanel, Flutter, ChromaDB, LangChain, OpenAI, StreamLit
+                    MERN, NextJS, Tailwind, Google API, Dart, SvelteKit,
+                    WordPress, cPanel, Flutter, ChromaDB, LangChain, OpenAI,
+                    StreamLit
                   </p>
                 </div>
                 <div>
