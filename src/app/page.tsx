@@ -26,7 +26,7 @@ export default function Home() {
               <span className="text-primary">Aron Resty Ramillano</span>
             </h1>
             <p className="text-xl mb-6">
-              BS Computer Science Graduate &amp; Aspiring Full Stack Developer
+              BS Computer Science Graduate, Full Stack Developer
             </p>
             <a
               className="btn  btn-accent btn-outline rounded-md "
@@ -114,6 +114,12 @@ export default function Home() {
                   "Linux",
                   "Java",
                   "Nginx",
+                  "AWS",
+                  "PostgreSQL",
+                  "React Native",
+                  "Django",
+                  "Expo",
+                  
                 ].map((tech) => (
                   <span
                     key={tech}
@@ -134,6 +140,37 @@ export default function Home() {
           <section id="experience" className="bg-gray-50 py-10 scroll-mt-14">
             <div className="container mx-auto px-6 flex flex-col gap-8">
               <h2 className="text-3xl font-bold">Work Experience</h2>
+              <div className="">
+                <div className="flex flex-row items-center gap-2">
+                  <h3 className="text-2xl font-semibold">The App Factory</h3>
+                  <a
+                    href="https://www.linkedin.com/company/theappfactoryio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin size={24} />
+                  </a>
+                </div>
+                <p className="italic">
+                  Software Engineer I - Remote (June 2025 - Present)
+                </p>
+                <ul className="list-disc ml-6 mt-4 space-y-2">
+                  <li>
+                    Spearheading full-stack development of customer-facing
+                    mobile applications using React Native and Django REST.
+                  </li>
+                  <li>
+                    Managing and optimizing backend infrastructure, and service
+                    uptime for production mobile apps, with AWS deployments for
+                    reliable backend services.
+                  </li>
+                  <li>
+                    Collaborating cross-functionally to deliver scalable
+                    solutions, with a focus on performance, maintainability, and
+                    user experience across platforms.
+                  </li>
+                </ul>
+              </div>
               <div className="">
                 <div className="flex flex-row items-center gap-2">
                   <h3 className="text-2xl font-semibold">
@@ -219,7 +256,9 @@ export default function Home() {
                     />
                   </figure>
                   <div className="card-body">
-                    <div className="card-title">BashBook Todo - Shared Task Management Mobile App</div>
+                    <div className="card-title">
+                      BashBook Todo - Shared Task Management Mobile App
+                    </div>
                     <div className="flex flex-row gap-2">
                       <a
                         href="https://github.com/PERSEUS-1337/bashbook-todo-list-app"
@@ -558,16 +597,15 @@ export default function Home() {
                 <div>
                   <h3 className="font-semibold mb-2">Programming Languages</h3>
                   <p>
-                    Python, JavaScript, TypeScript, HTML, C, Rust, SQL, Dart,
-                    Java
+                    Python, JavaScript, TypeScript, HTML, C, SQL, Dart, Java
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2">Technologies</h3>
                   <p>
-                    MERN, NextJS, Tailwind, Google API, Dart, SvelteKit,
-                    WordPress, cPanel, Flutter, ChromaDB, LangChain, OpenAI,
-                    StreamLit
+                    MERN, NextJS, Google API, Wordpress, cPanel, VectorDBs,
+                    LangChain, OpenAI, StreamLit, React Native Expo, Django Rest
+                    Framework
                   </p>
                 </div>
                 <div>
