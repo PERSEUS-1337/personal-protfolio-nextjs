@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+public/images/BSCS_Ramillano_AronResty.photo-edit
+.gitignore
+public/images/BSCS_Ramillano_AronResty.jpg

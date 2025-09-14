@@ -21,6 +21,15 @@ export default function Home() {
             id="hero"
             className="container mx-auto py-10 px-6 text-center scroll-mt-24"
           >
+             <div className="mb-8">
+              <Image
+                src="/images/profile2.jpg"
+                alt="Profile Picture"
+                width={150}
+                height={150}
+                className="mx-auto rounded-full"
+              />
+            </div>
             <h1 className="text-4xl text-neutral font-bold mb-4">
               Hi, I am{" "}
               <span className="text-primary">Aron Resty Ramillano</span>
@@ -59,15 +68,7 @@ export default function Home() {
                 <FaGithub size={24} />
               </a>
             </div>
-            <div className="mt-8">
-              <Image
-                src="/images/profile.jpg"
-                alt="Profile Picture"
-                width={150}
-                height={150}
-                className="mx-auto rounded-full"
-              />
-            </div>
+           
           </section>
 
           {/* About Me */}
